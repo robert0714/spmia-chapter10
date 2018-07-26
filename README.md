@@ -34,6 +34,21 @@ If everything builds successfully you should see a message indicating that the b
 Now we are going to use docker-compose to start the actual image.  To start the docker image,
 change to the directory containing  your chapter 10 source code.  Issue the following docker-compose command:
 
+   **export BUILD_NAME=TestManualBuild**
+   
    **docker-compose -f docker/common/docker-compose.yml up**
 
 If everything starts correctly you should see a bunch of Spring Boot information fly by on standard out.  At this point all of the services needed for the chapter code examples will be running.
+
+
+# Example URL
+
+**http://localhost:8761/**
+
+**http://localhost:8080/metrics**
+
+**http://localhost:8080/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/**
+ 
+**http://localhost:5555/routes**
+
+**http://localhost:8080/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a/licenses/t9876f8c-c338-4abc-zf6a-ttt1**
